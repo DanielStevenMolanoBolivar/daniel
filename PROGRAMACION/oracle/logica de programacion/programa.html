@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas width="600" height="400"  >
+
+    </canvas>
+    
+    <script>
+        let pantalla = document.querySelector("canvas")
+        let pincel = pantalla.getContext("2d")
+        
+        pincel.fillStyle = "lightgrey";
+        pincel.fillRect(0,0,600,400);
+        /*asi es como van las cordenadas 
+        1=posicion con referencia de izquierda a derecha, eje x
+
+        2= posicion con referencia de arriba hacia abajo
+        eje y
+
+        3= ancho del canvas de izquierda a derecha
+
+        4= alto del canvas de arriba hacia abajo 
+        */                    
+    
+        pincel.fillStyle = "green";
+        pincel.fillRect(0,0,200,400);
+    
+        pincel.fillStyle = "red";
+        pincel.fillRect(400,0,200,400);
+
+
+        pincel.fillStyle = "blue";
+        pincel.beginPath()
+        //eje principal o punto de referencia para iniciar 
+        pincel.moveTo(300,200)
+        //ubicaciones para medidad 
+        pincel.lineTo(200,400)
+        pincel.lineTo(400,400)
+        //relleno 
+        pincel.fill()
+
+        pincel.fillStyle = "blue";
+        pincel.beginPath()
+        pincel.arc(300,200,50,0,2*3.14)
+        // (eje x, eje y, tamaño, creo que cantidad del relleno en el circulo o algo asi, tambien parte del relleno pero desde otra direccion  )
+        pincel.fill()
+
+
+
+        
+     
+    
+    
+    </script>
+    
+</body>
+</html>
+
+

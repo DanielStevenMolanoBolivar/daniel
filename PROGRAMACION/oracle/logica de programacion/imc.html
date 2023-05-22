@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>PROGRAMA</h1>
+<script>
+    
+     /*Esta es la forma que me invente me falta estudiar sobre la funcion creadora de objetos y poner los obejtos en un array para clacular el imc y dividirlo por le length del array 
+     
+     let persona1={
+        nombre:"Daniel",
+        peso :75,
+        altura :1.79,
+        }
+    let persona2 ={
+        nombre:"Juan",
+        peso :66,
+        altura :1.72,
+    }
+    
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    function calcularImc1(nombre){
+        imc1= Math.round(persona1.peso/(persona1.altura*persona1.altura))
+        nombre= persona1.nombre
+        imprimir(`El IMC de ${nombre} es de ${imc1}`)
+    }
+
+    function calcularImc2(nombre){
+        imc2= Math.round(persona2.peso/(persona2.altura*persona2.altura))
+        nombre= persona2.nombre
+        imprimir(`El IMC de ${nombre} es de ${imc2}`)
+    }
+
+    function promedioImc(par1,par2){
+        imprimir(`El promedio de IMC de los estudiantes ${par1.nombre} y ${par2.nombre} es de ${(imc1 + imc2)/2}`)
+    }
+    
+
+    calcularImc1(persona1)
+    calcularImc2(persona2)
+
+    promedioImc(persona1,persona2)
+    
+    */
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura){
+        imc= Math.round(peso/(altura*altura))
+        return imc
+    }
+
+    let nombreDeUsuario = prompt("Escribe tu Nombre :"   )
+    let pesoUser = prompt(nombreDeUsuario + " Escribe tu peso :"   ) 
+    let alturaUser= prompt(nombreDeUsuario + " Escribe tu Altura :")
+    let imcCalculado= calcularImc(pesoUser,alturaUser)
+
+    imprimir(`El IMC calculado de ${nombreDeUsuario} ${imcCalculado}`)
+
+
+
+   /* let imcDaniel = calcularImc(75,1.79)
+    let imcJuan = calcularImc(64,1.72)
+
+    imprimir (`El IMC de Daniel es de ${imcDaniel} y el IMC de Juan es de ${imcJuan} por tal motivo el promdeio del IMC es de ${(imcDaniel + imcJuan)/2}`)*/
+
+
+
+</script>
+</body>
+</html>

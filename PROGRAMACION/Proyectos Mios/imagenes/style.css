@@ -1,0 +1,29 @@
+
+
+body{
+    background-color: #efefef;
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head .narutoimg{
+    height: 100px;
+    width: 50px;
+}
+.head .menu{
+    cursor: pointer;
+    border: solid 0.1px rgb(82, 55, 27);
+
+}
+
+.head p{
+
+    
+}

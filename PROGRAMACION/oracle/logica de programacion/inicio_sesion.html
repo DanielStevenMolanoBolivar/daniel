@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    let inicioDeSesionRegistrado = "alura";
+    let contrasenhaRegistrada = "alura321";
+    let inicioSesion = 0
+   
+
+    let intentos=1
+    let maxIntentos=3
+
+    while (intentos <= maxIntentos){
+        let inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        let contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado ==             inicioDeSesionIngresado && contrasenhaRegistrada ==contrasenhaIngresada ) {
+            inicioSesion =1
+            alert("Bienvenido al sistema " + inicioDeSesionRegistrado);
+        }else{
+            if (intentos < maxIntentos){alert("inicio de sesión inválido. Favor intente de nuevo");}
+            else{
+                alert("Acceso invalido, intente mas tarde ");
+
+            }
+        }
+        intentos++;
+    }
+    
+    
+    
+</script>
+
+
+
+</body>
+</html>

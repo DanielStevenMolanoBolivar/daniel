@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>PROGRAMA</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");
+    }  
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularImc(peso,altura){
+        imc= Math.round(peso/(altura*altura))
+        return imc
+    }
+
+    let nombreDeUsuario = prompt("Escribe tu Nombre :"   )
+    let pesoUser = prompt(nombreDeUsuario + " Escribe tu peso :"   ) 
+    let alturaUser= prompt(nombreDeUsuario + " Escribe tu Altura :")
+    let imcCalculado= calcularImc(pesoUser,alturaUser)
+
+    imprimir(`El IMC calculado de ${nombreDeUsuario} ${imcCalculado}`)
+    
+    if (imcCalculado < 18.5){
+        imprimir(`El IMC esta en ${imcCalculado} por lo cual esta abajo de lo recomendado`)
+    }else if (imcCalculado >= 18.5 && imcCalculado < 25){
+        imprimir(`El IMC esta en ${imcCalculado} por lo cual esta normal`)
+    }else if (imcCalculado > 25 && imcCalculado < 30){
+        imprimir(`El IMC esta en ${imcCalculado} por lo cual esta en sobrepeso`)
+    }else if (imcCalculado >30){
+        imprimir(`El IMC esta en ${imcCalculado} por lo cual esta sufre de obesidad`)
+    }
+
+</script>
+</body>
+</html>

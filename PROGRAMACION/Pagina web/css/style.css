@@ -1,0 +1,48 @@
+body{
+    background-color: #dcdde1;
+    color: rgb(0, 0, 0);
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 1rem;  
+}
+
+header{
+    background-color: black; 
+}
+
+.header-div{
+    display: flex;
+    height: 7rem;
+    width: 67rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;    
+      
+}
+
+.header-div h1 img{
+    width: 6rem;
+}
+
+nav{
+    position: relative;
+    right: 0rem;
+       
+}
+
+nav li{
+    display: inline;
+    right: 0rem;         
+}
+
+nav a{
+    color: #dcdde1;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Pares</title>
+</head>
+<body>
+    <h1>Numeros Pares</h1>
+    <script>
+        function saltarLinea() {
+            document.write("<br>");    
+            document.write("<br>");
+        }  
+        function imprimir(frase) {
+            document.write(frase);
+            saltarLinea();
+        }
+
+        let numer = 0
+
+        while (numer <= 100){
+            imprimir(numer);
+            numer += 2
+        }
+        imprimir("Fin");
+    </script>
+</body>
+</html>

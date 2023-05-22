@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(162, 23, 23);
+   
+}
+
+.pinguino{
+    width: 300px;
+    height: 300px;
+    display: block;
+    position:absolute;    
+    top:12%;
+    left: 35%;
+    margin: 5%;
+    
+}
+
+.pinguino-superior{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 45%;
+    display: flex;
+    top: -80%;
+    left: 5%;
+    position: relative;
+}
+
+.mejilla-derecha{
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    position: absolute;
+    border-radius: 45%;
+    top: 13%;
+    left: 7%;
+}
+
+.mejilla-izquierda{
+    background-color: white;
+    width: 130px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    border-radius: 45%;
+}
+
+.pico{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    left: 25%;
+    top: 60%;
+}
+
+
+
+.color-mejillas1{
+    background-color: yellow;
+    height: 15px;
+    width:30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 56%;
+    left: 15%;
+}
+
+.color-mejillas2{
+    background-color: yellow;
+    height: 15px;
+    width:30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+}
+
+.ojo-derecho{
+    background-color: black;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    border-radius: 50%;
+    top: 35%;
+    left: 29%;
+}
+
+.ojo-izquierdo{
+    background-color: black;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    border-radius: 50%;
+    top: 35%;
+    left: 56%;
+}
+
+.reflejos{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+    position: relative;
+}
+
+.pico-superior{
+    background-color: yellow;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 64%;
+    left: -10%;
+    border-radius: 50%;
+}
+
+.pico-inferior{
+    background-color: yellow;
+    width: 30px;
+    height: 15px;
+    position: relative;
+    top: 71%;
+    left: -27%;
+    border-radius: 50%;
+}
+
+.pinguino-inferior{
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    border-radius: 46%;
+    top: 40%;
+    position: relative;
+}
+
+.panza{
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    border-radius: 46%;
+    top: -94%;
+    left: 6%;
+    position: relative;
+    
+}
+
+.mano-derecha{
+    background-color: black;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: -12%;
+    top: 7%;
+    border-radius: 46%;
+}
+
+.mano-izquierda{
+    background-color: black;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 78%;
+    top: 27%;
+    border-radius: 46%;
+}
+
+.pie-izquierdo{
+    background-color: black;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 2%;
+    top: 40%;
+    border-radius: 46%;
+    
+}
+
+.pie-derecho{
+    background-color: black;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: 64%;
+    top: 19%;
+    border-radius: 46%;
+    
+}
+
